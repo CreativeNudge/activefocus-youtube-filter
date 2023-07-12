@@ -14,9 +14,21 @@ ActiveFocus | YouTube Filter is a browser extension that allows you to take cont
 To install ActiveFocus | YouTube Filter, follow these steps:
 
 1. Download the extension files from the [GitHub repository](https://github.com/karinadalca/activefocus-youtube-filter).
+   - Click on the green "Code" button.
+   - Select "Download ZIP" from the dropdown menu.
+   - Extract the contents of the downloaded ZIP file.
+
 2. Open your browser's extension management page.
+   - In Google Chrome, click on the three gray dots in the top right corner, then go to "More Tools" > "Extensions".
+
 3. Enable Developer mode.
-4. Load the extension by clicking on "Load unpacked" or "Load extension," and select the downloaded extension folder.
+   - Toggle the "Developer mode" switch at the top right corner of the extension management page.
+
+4. Load the extension.
+   - Click on the "Load unpacked" or "Load extension" button (may vary depending on your browser version).
+   - Select the extracted extension folder (the folder containing the manifest.json file).
+
+5. The ActiveFocus | YouTube Filter extension should now be installed and ready to use.
 
 ## Usage
 
