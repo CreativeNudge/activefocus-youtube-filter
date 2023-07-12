@@ -50,3 +50,6 @@ window.onload = function () {
       });
   };
   
+  document.getElementById('feedback-button').addEventListener('click', function() {
+    window.open('https://github.com/karinadalca/activefocus-youtube-filter/issues', '_blank');
+  });
