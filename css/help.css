@@ -1,80 +1,79 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  #container {
-    display: flex;
-    flex-direction: column;
-    width: 100%; /* Take up maximum width available */
-    align-items: center; /* Center align items horizontally */
-    justify-content: center; /* Center align items vertically */
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 4px;
-    box-sizing: border-box; /* Include padding in the width */
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 5px;
-    color: #990B10;
-  }
-  
-  #logo {
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  #questions-container {
-    width: 100%; /* Take up maximum width available */
-    box-sizing: border-box; /* Include padding in the width */
-  }
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-  .question {
-    background-color: #f8f8f8; /* Slightly off-white background */
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 100%; /* Take up maximum width available */
-    cursor: pointer;
-    box-sizing: border-box; /* Include padding in the width */
-    font-size: 18px; /* Increase the font size for questions */
-  }
-  
-  .answer {
-    display: none; /* Hide the answer initially */
-    margin-top: 10px;
-    background-color: #e8e8e8; /* Slightly darker shade for the answer */
-    padding: 10px;
-    width: 100%; /* Take up maximum width available */
-    box-sizing: border-box; /* Include padding in the width */
-    font-size: 16px; /* Set a slightly smaller font size for answers */
-  }
-  
-  .answer.show {
-    display: block;
-    margin-bottom: 10px; /* Add bottom margin for spacing between questions */
-  }
-  
-  #feedback-button {
-    width: 100%;
-    background-color: #990B10;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 18px;
-  }
-  
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Take up maximum width available */
+  align-items: center; /* Center align items horizontally */
+  justify-content: center; /* Center align items vertically */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #990B10;
+}
+
+#logo {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#questions-container {
+  width: 100%; /* Take up maximum width available */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.question {
+  background-color: #f8f8f8; /* Slightly off-white background */
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%; /* Take up maximum width available */
+  cursor: pointer;
+  box-sizing: border-box; /* Include padding in the width */
+  font-size: 18px; /* Increase the font size for questions */
+}
+
+.answer {
+  display: none; /* Hide the answer initially */
+  margin-top: 10px;
+  background-color: #e8e8e8; /* Slightly darker shade for the answer */
+  padding: 10px;
+  width: 100%; /* Take up maximum width available */
+  box-sizing: border-box; /* Include padding in the width */
+  font-size: 16px; /* Set a slightly smaller font size for answers */
+}
+
+.answer.show {
+  display: block;
+  margin-bottom: 10px; /* Add bottom margin for spacing between questions */
+}
+
+#feedback-button {
+  width: 100%;
+  background-color: #990B10;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}

@@ -8,9 +8,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-#container {
+  }
+  
+  #container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,26 +19,26 @@ body {
     padding: 20px;
     background-color: #fff;
     border-radius: 4px;
-}
-
- h1 {
+  }
+  
+  h1 {
     text-align: center;
     margin-bottom: 5px;
     color: #990B10;
-}
-
-h2 {
+  }
+  
+  h2 {
     text-align: center;
-}
-
-#logo {
+  }
+  
+  #logo {
     width: 100%;
     max-width: 100px;
     height: auto;
     margin-bottom: 20px;
-}
-
-#api-key-container {
+  }
+  
+  #api-key-container {
     display: flex;
     align-items: center;
   }
@@ -57,59 +57,60 @@ h2 {
     cursor: pointer;
     height: 100%;
   }
-
+  
   #tags-container {
     margin-bottom: 20px;
     text-align: center;
     display: flex;
     gap: 20px;
-}
-
-#categories-container {
+  }
+  
+  #categories-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
-}
-
-.category-label {
+  }
+  
+  .category-label {
     text-align: center;
     margin-bottom: 10px;
-}
-
-.category-input {
+  }
+  
+  .category-input {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-input[type="text"],
-input[type="submit"],
-textarea {
+  }
+  
+  input[type="text"],
+  input[type="submit"],
+  textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-textarea {
+  }
+  
+  textarea {
     resize: vertical;
-}
-
-#allow-tags,
-#deny-tags {
+  }
+  
+  #allow-tags,
+  #deny-tags {
     flex: 1;
     width: 90%;
     height: 100px; /* Adjust the height to your preference */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-#saveButton {
-    background-color: #990B10;;
+  }
+  
+  #saveButton {
+    background-color: #990B10;
     color: #fff;
     cursor: pointer;
-}
+  }
+  

@@ -63,7 +63,7 @@ async function checkVideo() {
     if (!isOn) return; // If the extension is off, exit the function
 
     // Get the video ID from the URL
-    var videoId = window.location.search.split('v=')[1];
+    var videoId = new URLSearchParams(window.location.search).get('v');
     if (!videoId) return; // If there's no video ID in the URL, exit the function
 
     // Get the API key from storage

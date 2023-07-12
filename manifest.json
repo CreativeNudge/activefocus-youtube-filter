@@ -1,24 +1,32 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "ActiveFocus | YouTube Filter for Chrome",
-  "version": "1.0",
+  "version": "2.0",
   "description": "Blocks unproductive YouTube videos",
-  "permissions": ["activeTab", "https://www.youtube.com/*", "storage"],
-  "icons": {
-    "128": "ActiveFocus Logo.png"
-  },
-  "browser_action": {
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage",
+    "host:https://www.youtube.com/*"
+  ],
+  "action": {
     "default_popup": "html/popup.html"
   },
-  "options_page": "html/settings.html",
+  "options_ui": {
+    "page": "html/settings.html",
+    "open_in_tab": true
+  },
   "background": {
-    "scripts": ["javascript/background.js"],
-    "persistent": false
+    "service_worker": "javascript/background.js"
   },
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["javascript/content.js"]
+      "js": ["javascript/content.js"],
+      "run_at": "document_idle"
     }
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
   ]
 }

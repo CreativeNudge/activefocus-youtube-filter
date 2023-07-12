@@ -1,14 +1,14 @@
-window.onload = function () {
+window.onload = function() {
   // Get the API key input field
   var apiKeyInput = document.getElementById('api-key');
 
   // Listen for changes in the API key input field
-  apiKeyInput.addEventListener('input', function (event) {
+  apiKeyInput.addEventListener('input', function(event) {
     // Get the entered API key value
     var apiKey = event.target.value;
 
     // Save the API key
-    chrome.storage.sync.set({ apiKey: apiKey }, function () {
+    chrome.storage.sync.set({ apiKey: apiKey }, function() {
       console.log('API key saved:', apiKey);
     });
   });
@@ -23,11 +23,11 @@ window.onload = function () {
   var allowTagsInput = document.getElementById('allow-tags');
   var denyTagsInput = document.getElementById('deny-tags');
 
-  allowTagsInput.addEventListener('input', function () {
+  allowTagsInput.addEventListener('input', function() {
     adjustTextareaHeight(allowTagsInput);
   });
 
-  denyTagsInput.addEventListener('input', function () {
+  denyTagsInput.addEventListener('input', function() {
     adjustTextareaHeight(denyTagsInput);
   });
 
@@ -36,8 +36,8 @@ window.onload = function () {
   adjustTextareaHeight(denyTagsInput);
 
   // When the save button is clicked, save the settings
-  document.getElementById('saveButton').addEventListener('click', function () {
-    var categories = Array.from(document.querySelectorAll('input[name="categories"]:checked')).map(function (checkbox) {
+  document.getElementById('saveButton').addEventListener('click', function() {
+    var categories = Array.from(document.querySelectorAll('input[name="categories"]:checked')).map(function(checkbox) {
       return checkbox.value;
     });
 
@@ -49,24 +49,24 @@ window.onload = function () {
       allowedCategories: categories,
       allowTags: allowTags,
       denyTags: denyTags
-    }, function () {
+    }, function() {
       alert('Settings saved!');
     });
   });
 
   // When the update button is clicked, display an alert
-  document.getElementById('updateButton').addEventListener('click', function () {
+  document.getElementById('updateButton').addEventListener('click', function() {
     alert('API Key saved!');
   });
 
   // Load the saved settings when the page loads
-  chrome.storage.sync.get(['allowedCategories', 'allowTags', 'denyTags'], function (data) {
+  chrome.storage.sync.get(['allowedCategories', 'allowTags', 'denyTags'], function(data) {
     var categories = data.allowedCategories || [];
     var allowTags = data.allowTags || [];
     var denyTags = data.denyTags || [];
 
     // Update category checkboxes based on saved categories
-    categories.forEach(function (category) {
+    categories.forEach(function(category) {
       document.querySelector('input[name="categories"][value="' + category + '"]').checked = true;
     });
 
@@ -80,11 +80,11 @@ window.onload = function () {
   });
 
   // Select All checkbox event listener
-  document.getElementById('selectAll').addEventListener('change', function (event) {
+  document.getElementById('selectAll').addEventListener('change', function(event) {
     var isChecked = event.target.checked;
     var categoryCheckboxes = document.querySelectorAll('input[name="categories"]');
 
-    categoryCheckboxes.forEach(function (checkbox) {
+    categoryCheckboxes.forEach(function(checkbox) {
       checkbox.checked = isChecked;
     });
   });
@@ -94,7 +94,7 @@ window.onload = function () {
 chrome.storage.sync.get('apiKey', function(data) {
   var apiKey = data.apiKey;
   var apiKeyInput = document.getElementById('api-key');
-  
+
   // Check if the API key is available
   if (apiKey) {
     apiKeyInput.value = '**********'; // Display asterisks as a placeholder
@@ -105,7 +105,7 @@ chrome.storage.sync.get('apiKey', function(data) {
 apiKeyInput.addEventListener('input', function(event) {
   // Get the entered API key value
   var apiKey = event.target.value;
-  
+
   // Save the API key
   chrome.storage.sync.set({ apiKey: apiKey }, function() {
 

@@ -3,7 +3,6 @@ function getApiKey() {
   return new Promise((resolve, reject) => {
     chrome.storage.sync.get('apiKey', function(data) {
       resolve(data.apiKey);
-      console.log('Retrieved API key:', data.apiKey);
     });
   });
 }
@@ -11,7 +10,6 @@ function getApiKey() {
 // Function to handle turning on the application
 async function turnOn() {
   var apiKey = await getApiKey();
-  console.log('API key in turnOn:', apiKey);
 
   if (!apiKey || apiKey.trim() === '') {
     chrome.storage.sync.set({ isOn: false }, function() {
