@@ -1,0 +1,54 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+h1 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #0056b3;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%; /* Add this line to make the buttons full width */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#toggle-button {
+  background-color: #990B10;
+}
+
+#toggle-button.isOn {
+  background-color: #45A049;
+}
+
+#settings-button,
+#support-button,
+#help-button {
+  background-color: #007BFF;
+}
+
+#toggle-button:hover {
+  background-color: #007BFF;
+}
+
+#settings-button:hover,
+#thanks-button:hover,
+#help-button:hover {
+  background-color: #0056b3;
+}

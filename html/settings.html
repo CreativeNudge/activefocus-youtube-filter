@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ActiveFocus | YouTube Filter</title>
+  <link rel="stylesheet" type="text/css" href="../css/settings.css">
+</head>
+<body>
+  <div id="container">
+    <h1>ActiveFocus | YouTube Filter</h1>
+    <img src="../ActiveFocus Logo.png" alt="Logo" id="logo">
+    <div id="api-container">
+      <h2>YouTube API Key</h2>
+      <div id="api-key-container">
+        <input type="password" id="api-key" placeholder="Enter your YouTube API key">
+        <button id="updateButton">Update</button>
+      </div>
+    </div>
+    <div id="tags-container">
+      <div>
+        <h2>Keywords to Allow on Videos</h2>
+        <textarea id="allow-tags" placeholder="Enter keywords separated by commas"></textarea>
+      </div>
+      <div>
+        <h2>Keywords to Reject on Videos</h2>
+        <textarea id="deny-tags" placeholder="Enter keywords separated by commas"></textarea>
+      </div>
+    </div>
+    <h2 class="category-label">Allow Categories</h2>
+    <div id="categories-container" class="category-input">
+      <input type="checkbox" id="selectAll"> Select All
+      <input type="checkbox" class="category" name="categories" value="1"> Film & Animation
+      <input type="checkbox" class="category" name="categories" value="2"> Autos & Vehicles
+      <input type="checkbox" class="category" name="categories" value="10"> Music
+      <input type="checkbox" class="category" name="categories" value="15"> Pets & Animals
+      <input type="checkbox" class="category" name="categories" value="17"> Sports
+      <input type="checkbox" class="category" name="categories" value="18"> Short Movies
+      <input type="checkbox" class="category" name="categories" value="19"> Travel & Events
+      <input type="checkbox" class="category" name="categories" value="20"> Gaming
+      <input type="checkbox" class="category" name="categories" value="21"> Videoblogging
+      <input type="checkbox" class="category" name="categories" value="22"> People & Blogs
+      <input type="checkbox" class="category" name="categories" value="23"> Comedy
+      <input type="checkbox" class="category" name="categories" value="24"> Entertainment
+      <input type="checkbox" class="category" name="categories" value="25"> News & Politics
+      <input type="checkbox" class="category" name="categories" value="26"> Howto & Style
+      <input type="checkbox" class="category" name="categories" value="27"> Education
+      <input type="checkbox" class="category" name="categories" value="28"> Science & Technology
+      <input type="checkbox" class="category" name="categories" value="29"> Nonprofits & Activism
+      <input type="checkbox" class="category" name="categories" value="30"> Movies
+      <input type="checkbox" class="category" name="categories" value="31"> Anime/Animation
+      <input type="checkbox" class="category" name="categories" value="32"> Action/Adventure
+      <input type="checkbox" class="category" name="categories" value="33"> Classics
+      <input type="checkbox" class="category" name="categories" value="35"> Documentary
+      <input type="checkbox" class="category" name="categories" value="36"> Drama
+      <input type="checkbox" class="category" name="categories" value="37"> Family
+      <input type="checkbox" class="category" name="categories" value="38"> Foreign
+      <input type="checkbox" class="category" name="categories" value="39"> Horror
+      <input type="checkbox" class="category" name="categories" value="40"> Sci-Fi/Fantasy
+      <input type="checkbox" class="category" name="categories" value="41"> Thriller
+      <input type="checkbox" class="category" name="categories" value="42"> Shorts
+      <input type="checkbox" class="category" name="categories" value="43"> Shows
+      <input type="checkbox" class="category" name="categories" value="44"> Trailers
+    </div>
+    <input type="submit" value="Save" id="saveButton">
+  </div>
+  <script src="../javascript/settings.js"></script>
+</body>
+</html>
+

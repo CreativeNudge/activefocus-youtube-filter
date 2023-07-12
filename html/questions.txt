@@ -1,0 +1,26 @@
+What is the purpose of this extension?
+The purpose of this extension is to help you reclaim your time and protect your mental health while still enjoying the educational and informative content available on YouTube.
+
+How does the extension filter YouTube videos?
+The extension uses Google's API to analyze video information and compare it against your customized settings, including allowed keywords and categories, to determine if a video aligns with your productivity goals.
+
+Can I customize the filtering settings?
+Yes, you can customize the keywords you want to allow, the keywords you want to filter, and the categories you want to block. If you have additional customization requests, please click the "Send Feedback" button below.
+
+How do I add keywords to allow or reject in videos?
+Simply click the ActiveFocus icon in your browser's toolbar and scroll down to the settings section. There, you can easily view and update your allowed keywords and categories.
+
+Is the extension free to use?
+Yes! This extension is completely free to use and designed to benefit everyone by promoting productivity.
+
+How can I support the development of this extension?
+The most significant way to support ActiveFocus is by using it and becoming more productive. Additionally, please share the extension with others who may benefit from it. If you would like to go a step further, you can show your appreciation by clicking the ActiveFocus icon and selecting "Support."
+
+Does the extension work on all YouTube pages?
+Yes, the extension works on all YouTube pages. If you encounter any issues, please report them by clicking the "Send Feedback" button below.
+
+Can I disable the extension temporarily?
+Certainly! You can pause the extension anytime by clicking the ActiveFocus icon in your browser's toolbar and selecting "Turn Off."
+
+How do I reset the extension's settings?
+To reset the extension's settings, go to the Extensions menu and find "ActiveFocus | YouTube Filter for Chrome." Click the reload button to restore the default settings.
