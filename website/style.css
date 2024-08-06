@@ -45,9 +45,43 @@ nav ul li a:hover {
     color: #990B10;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
 #logo {
-    width: 50px;
+    width: 50px; /* Adjust based on your logo size */
     height: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.logo-text {
+    font-size: 1.2rem; /* Adjust as needed */
+    font-weight: bold;
+    color: #333; /* Adjust color as needed */
+}
+
+/* If you need to adjust the overall header layout */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 1rem; /* Smaller font size on mobile */
+    }
+    
+    /* You might want to hide the text on very small screens */
+    @media (max-width: 480px) {
+        .logo-text {
+            display: none;
+        }
+    }
 }
 
 main {
